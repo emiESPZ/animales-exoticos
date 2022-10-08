@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid black;
+  box-shadow: 2px black;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+}
+
+.navLink {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.letras {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+  justify-content: center;
+}
+
+.linkLetra {
+  text-decoration: none;
+  margin: 1rem;
+  border: 2px solid black;
+  border-radius: 75%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.linkLetra:hover {
+  background-color: red;
+}
+.linkLetra:active {
+  background-color: yellow;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 15rem);
+  grid-column-gap: 6rem;
+  grid-row-gap: 5rem;
+  margin-top: 5rem;
+}
+
+.foto {
+  width: 18rem;
+  height: 10rem;
+}
