@@ -62,4 +62,58 @@ export const animals = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
+  {
+    id: 8,
+    name: 'Gorila',
+    letter: 'g',
+    image:
+      'https://www.nationalgeographic.com.es/medio/2018/02/27/gorila__1280x720.jpg',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 9,
+    name: 'Hipopótamo',
+    letter: 'h',
+    image:
+      'https://www.nationalgeographic.com.es/medio/2018/02/27/hipopotamo-en-africa__1280x720.JPG',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 10,
+    name: 'Jirafa',
+    letter: 'j',
+    image:
+      'https://www.nationalgeographic.com.es/medio/2021/09/07/el-piloto-de-jirafas_575d640b_2000x1333.jpg',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 11,
+    name: 'Insectos',
+    letter: 'i',
+    image:
+      'https://www.nationalgeographic.com.es/medio/2022/01/26/magicicada-casinnii_817e0ce6_1200x800.jpg',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 12,
+    name: 'Koala',
+    letter: 'k',
+    image:
+      'https://www.nationalgeographic.com.es/medio/2018/02/27/koala__1280x720.jpg',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 12,
+    name: 'Mono',
+    letter: 'm',
+    image:
+      'https://www.nationalgeographic.com.es/medio/2018/02/27/monos__1280x720.jpg',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
 ];
