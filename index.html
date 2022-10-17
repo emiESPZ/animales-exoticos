@@ -5,53 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav class="navBar">
-        <a class="navLink" href="index.html">Index</a>
-        <a class="navLink" href="./pages/animales.html">Animales</a>
-        <a class="navLink" href="./pages/quienesSomos.html">Quienes somos?</a>
-        <a class="navLink" href="./pages/contacto.html">Contacto</a>
+        <a href="index.html"><h2 class="logo">ANIMALES EXÓTICOS</h2></a>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a class="navLink" href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="navLink" href="./pages/animales.html">Animales</a>
+          </li>
+          <li class="menu-item">
+            <a class="navLink" href="./pages/cats.html">Gatos</a>
+          </li>
+          <li class="menu-item">
+            <a class="navLink" href="./pages/quienesSomos.html"
+              >Quienes somos?</a
+            >
+          </li>
+          <li class="menu-item">
+            <a class="navLink" href="./pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <section class="letras">
-      <a class="linkLetra" href="">A</a><a class="linkLetra" href="">B</a
-      ><a class="linkLetra" href="">C</a><a class="linkLetra" href="">D</a
-      ><a class="linkLetra" href="">E</a><a class="linkLetra" href="">F</a
-      ><a class="linkLetra" href="">G</a><a class="linkLetra" href="">H</a
-      ><a class="linkLetra" href="">I</a><a class="linkLetra" href="">J</a
-      ><a class="linkLetra" href="">K</a><a class="linkLetra" href="">M</a
-      ><a class="linkLetra" href="">N</a><a class="linkLetra" href="">O</a
-      ><a class="linkLetra" href="">P</a><a class="linkLetra" href="">Q</a
-      ><a class="linkLetra" href="">R</a><a class="linkLetra" href="">S</a
-      ><a class="linkLetra" href="">T</a> <a class="linkLetra" href="">U</a
-      ><a class="linkLetra" href="">V</a><a class="linkLetra" href="">W</a
-      ><a class="linkLetra" href="">Y</a><a class="linkLetra" href="">Z</a>
-    </section>
-    <section class="fotos">
-      <div class="container">
-        <img class="foto" src="./img/ardilla.jpg" alt="ardilla" /><img
-          class="foto"
-          src="./img/ciervo.jpg"
-          alt="ciervo"
-        /><img class="foto" src="./img/pato.jpg" alt="pato" /><img
-          class="foto"
-          src="./img/tigre.jpg"
-          alt="tigre"
-        />
-        <img class="foto" src="./img/ardilla.jpg" alt="ardilla" /><img
-          class="foto"
-          src="./img/ciervo.jpg"
-          alt="ciervo"
-        /><img class="foto" src="./img/pato.jpg" alt="pato" /><img
-          class="foto"
-          src="./img/tigre.jpg"
-          alt="tigre"
-        />
-      </div>
-    </section>
+    <main class="main">
+      <section>
+        <h2 class="title">ANIMALES</h2>
+        <div id="letters" class="letters">
+          <a class="link-letter" href="./pages/animales.html#a">A</a
+          ><a class="link-letter" href="./pages/animales.html#b">B</a
+          ><a class="link-letter" href="./pages/animales.html#c">C</a
+          ><a class="link-letter" href="./pages/animales.html#d">D</a
+          ><a class="link-letter" href="./pages/animales.html#e">E</a
+          ><a class="link-letter" href="./pages/animales.html#f">F</a
+          ><a class="link-letter" href="./pages/animales.html#g">G</a
+          ><a class="link-letter" href="./pages/animales.html#h">H</a
+          ><a class="link-letter" href="./pages/animales.html#i">I</a
+          ><a class="link-letter" href="./pages/animales.html#j">J</a
+          ><a class="link-letter" href="./pages/animales.html#k">K</a
+          ><a class="link-letter" href="./pages/animales.html#m">M</a
+          ><a class="link-letter" href="./pages/animales.html#n">N</a
+          ><a class="link-letter" href="./pages/animales.html#o">O</a
+          ><a class="link-letter" href="./pages/animales.html#p">P</a
+          ><a class="link-letter" href="./pages/animales.html#q">Q</a
+          ><a class="link-letter" href="./pages/animales.html#r">R</a
+          ><a class="link-letter" href="./pages/animales.html#s">S</a
+          ><a class="link-letter" href="./pages/animales.html#t">T</a>
+          <a class="link-letter" href="./pages/animales.html#u">U</a
+          ><a class="link-letter" href="./pages/animales.html#v">V</a
+          ><a class="link-letter" href="./pages/animales.html#w">W</a
+          ><a class="link-letter" href="./pages/animales.html#y">Y</a
+          ><a class="link-letter" href="./pages/animales.html#z">Z</a>
+        </div>
+      </section>
+      <section class="fotos">
+        <div id="animal-cards" class="container-animales"></div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
