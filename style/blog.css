@@ -1,0 +1,109 @@
+h1{
+    background-color: #f8a44f;
+    text-align: center;
+    font-family:'Archivo Black', sans-serif; 
+    margin-top: 30px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin:50px auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.container-tarjeta{
+     margin: 30px;
+    display: inline-block;
+    
+}
+
+.container-tarjeta:hover figure{
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform:perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+}
+
+figure{
+    width: 310px;
+    height: 370px;
+    margin: 0;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg); 
+}
+
+figure .frente,
+figure .atras{
+    width: 100%;
+    height: 100%;
+     border-radius: 5px;
+     transition: all ease .5s;
+     
+}
+
+figure .frente{
+    display: block;
+    backface-visibility: hidden;
+}
+
+figure .atras{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color: blanchedalmond;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+figure .atras .titulo{
+    color: white;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+}
+
+
+figure .atras .hr{
+    height: 4px;
+    background-color: white;
+    border: none;
+    margin-bottom: 30px;
+    opacity: .5;
+}
+
+figure .atras p{
+    font-family: 'Space Mono', monospace;
+    line-height: 22px;
+    font-size: 13px;
+
+}
+
+
+

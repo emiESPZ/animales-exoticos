@@ -16,15 +16,8 @@ animals.forEach((animal) => {
       />
       <div class="container">
         <h4><b>${animal.name}</b></h4>
-        <p>${animal.description}</p>
+        <p style='margin-bottom: 0.5rem'>${animal.description}</p>
       </div>
         `;
   animalCards.appendChild(div);
 });
-
-/* function select(e) {
-  e.preventDefault();
-  let selectedLetter = e.target.textContent;
-  let data = animals.filter((animal) => animal.letter !== selectedLetter);
-  console.log(data);
-} */

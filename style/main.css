@@ -1,0 +1,37 @@
+/*----------------CONTACTO------------------- */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Kanit', sans-serif;
+}
+h1 {
+  color: rgb(255, 179, 0);
+  padding-top: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-top: 0.7rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+.navbar {
+  background-color: rgb(255, 179, 0);
+}
+h3 {
+  text-decoration: underline;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(130, 130, 128);
+}
+
+p {
+  font-size: 22px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.navLink {
+}
+
+/*------------------BLOG---------------------------*/

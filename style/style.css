@@ -2,27 +2,37 @@
   margin: 0;
   padding: 0;
 }
+body {
+  padding: 90px 20px 0;
+}
 
-.navBar {
-  background-color: #ffce00;
+header {
+  background-color: rgb(255, 179, 0);
   position: fixed;
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   border: 2px solid black;
   top: 0;
+  left: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
 }
 .navBar a {
   text-decoration: none;
 }
-.menu-items {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  margin-top: -1.6rem;
-  list-style-type: none;
+.navLink {
+  text-decoration: none;
+  margin-right: 3.5rem;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  color: black;
+  cursor: pointer;
 }
-.main {
-  margin-top: 10rem;
+.nn {
+  margin-top: 2rem;
 }
 
 .logo {
@@ -31,13 +41,32 @@
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
-.navLink {
-  text-decoration: none;
-  margin-right: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  color: black;
+
+.menu-items {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -2.6rem;
+  list-style-type: none;
+  left: 100%;
+  transition: left 0.3s;
 }
+.menu-item {
+  margin-top: 1.2rem;
+}
+.toggle {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 45px;
+  padding: 0, 20px;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.main {
+  margin-top: 8rem;
+}
+
 .navLink:after {
   content: '';
   position: absolute;
@@ -64,37 +93,47 @@
 .letters {
   margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(8, 100px);
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+  margin-right: 25%;
+  margin-left: 25%;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
 }
+.letters-container {
+  width: 100%;
+}
 
 .link-letter {
+  display: flex;
   text-decoration: none;
-  margin: 1rem;
-  border: 2px solid black;
-  border-radius: 75%;
+  justify-content: center;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.8rem;
+  border-radius: 55%;
   text-align: center;
   font-size: 20px;
   background-color: black;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+    0 10px 0 #ccc, 0 11px 0 #ccc, 0 12px 0 #ccc, 0 20px 30px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 
 .link-letter:hover {
   animation-name: cambio;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   color: black;
   box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.5);
-  animation-name: shake 0.8;
 }
 @keyframes cambio {
   from {
     background-color: black;
-    border: 2px solid black;
   }
   to {
-    background-color: #dbdbdb;
-    border: 2px solid #dbdbdb;
+    background-color: #999999;
   }
 }
 
@@ -105,11 +144,17 @@
 .container-animales {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, 15rem);
-  grid-column-gap: 6rem;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-column-gap: 5rem;
   grid-row-gap: 5rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.hambLink {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -123,10 +168,56 @@
 .container {
   padding: 2px 16px;
 }
+
 .foto {
   height: 10rem;
 }
 
+/* .letters-animales {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(8, 55px);
+  justify-content: right;
+  font-family: 'Montserrat', sans-serif;
+} */
+
+/* .link-letter-animales {
+  text-decoration: none;
+  margin: 0.2rem;
+  width: 2rem;
+  border: 2px solid black;
+  border-radius: 75%;
+  text-align: center;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+    0 10px 0 #ccc, 0 11px 0 #ccc, 0 12px 0 #ccc, 0 20px 30px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+} */
+
+.link-letter-animales:hover {
+  animation-name: cambia;
+  animation-duration: 1.2s;
+  color: black;
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.5);
+}
+@keyframes cambia {
+  from {
+    background-color: black;
+    border: 2px solid black;
+  }
+  to {
+    background-color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+  }
+}
+
+.link-letter-animales:active {
+  background-color: black;
+}
 .letterAnimals {
   display: flex;
   flex-direction: column;
@@ -150,6 +241,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .animal-full img {
@@ -157,19 +249,10 @@
 }
 
 .animal-full p {
-  margin-left: 25rem;
-  margin-right: 25rem;
   margin-top: 2.5rem;
   margin-bottom: 3.5rem;
-  text-align: center;
+  text-align: justify;
   font-family: 'Montserrat', sans-serif;
-}
-.footer {
-  background-color: #1c180e;
-  width: 100%;
-  height: 6rem;
-  border: 2px solid black;
-  bottom: 0;
 }
 
 .cats {
@@ -181,45 +264,152 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-
-.letters-animales {
-  margin-top: -4.2rem;
-  display: grid;
-  grid-template-columns: repeat(8, 85px);
-  justify-content: right;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.link-letter-animales {
-  text-decoration: none;
-  margin: 0.2rem;
-  width: 2rem;
+.footer {
+  background-color: #1c180e;
+  width: 100%;
+  height: 6rem;
   border: 2px solid black;
-  border-radius: 75%;
-  text-align: center;
-  font-size: 12px;
-  background-color: black;
-  color: white;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.link-letter-animales:hover {
-  animation-name: cambio;
-  animation-duration: 1.2s;
-  color: black;
-  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.5);
-  animation-name: shake 0.8;
-}
-@keyframes cambio {
-  from {
-    background-color: black;
-    border: 2px solid black;
+@media (max-width: 1225px) {
+  .card {
+    width: 105%;
+    height: 105%;
   }
-  to {
-    background-color: #dbdbdb;
-    border: 2px solid #dbdbdb;
+  .container-animales {
+    column-gap: 4rem;
+  }
+  .letters {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
+@media (max-width: 1192px) {
+  .card {
+    width: 100%;
+    height: 120%;
+  }
+  .foto {
+    height: 52%;
+  }
+  .container-animales {
+    row-gap: 8rem;
+  }
+  .container {
+    margin-top: 1.2rem;
+  }
+}
+@media (max-width: 966px) {
+  .card {
+    width: 35rem;
+    height: 35rem;
+  }
+  .foto {
+    height: 22rem;
+  }
 
-.link-letter-animales:active {
-  background-color: black;
+  .container-animales {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+  }
+  .fotos {
+    justify-content: center;
+    text-align: center;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .letters {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 965px) {
+  body {
+    padding: 70px;
+  }
+  header {
+    height: 2.8rem;
+  }
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20rem;
+    position: fixed;
+    left: 0;
+    top: 5.68rem;
+    background-color: rgb(233, 224, 148);
+    width: 100%;
+    padding: 15px 0;
+    height: calc(100% - 3rem);
+    overflow-y: auto;
+    justify-content: stretch;
+  }
+  .menu-item {
+    margin-top: 3.8rem;
+    font-size: 2rem;
+    justify-content: center;
+    margin-left: 3rem;
+  }
+  .navLink:hover {
+    color: #ffce00;
+  }
+
+  .toggle {
+    display: block;
+    margin-top: -2.5rem;
+    margin-left: 85%;
+    cursor: pointer;
+  }
+  .logo {
+    cursor: auto;
+  }
+  .menu_visible {
+    display: none;
+  }
+}
+@media (max-width: 565px) {
+  .card {
+    width: 25rem;
+    height: 32rem;
+  }
+  .foto {
+    height: 22rem;
+  }
+  @media (max-width: 410px) {
+    .card {
+      width: 20rem;
+      height: 32rem;
+      font-size: 1rem;
+    }
+    .foto {
+      height: 18rem;
+    }
+
+    .link-letter {
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 0;
+      display: flex;
+      padding: 2rem;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .link-letter {
+    display: none;
+  }
+  .main {
+    margin-top: 2rem;
+  }
+  .fotos {
+    margin-top: -6rem;
+  }
 }
